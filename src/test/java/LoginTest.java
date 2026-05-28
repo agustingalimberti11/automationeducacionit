@@ -1,10 +1,10 @@
 import org.example.LoginPage;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 
 public class LoginTest extends BaseTest{
-
     @Test
     public void login(){
     LoginPage login = new LoginPage(driver);
@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest{
     @Test
     public void loginNoExitoso(){
         LoginPage login = new LoginPage(driver);
-        login.logear("admin", "admin");
-        assertTrue(login.validarLabelUsuarioContraseñaIncorrecto());
+        login.logear("admin", "safsdfsdf323233");
+        Assert.assertTrue(login.validarLabelUsuarioContraseñaIncorrecto());
     }
 }

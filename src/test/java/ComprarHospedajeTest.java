@@ -1,6 +1,6 @@
 import org.example.LoginPage;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
 
 public class ComprarHospedajeTest extends BaseTest{
 
